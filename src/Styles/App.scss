@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+$primaryColor: rgb(165, 167, 53);
+$secondaryColor: #c9e4ca;
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $primaryColor;
+  padding: 15px;
+  
+}
+.homePage {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 50px auto;
+}
+.products {
+  width: 33%;
+  padding: 15px;
+  border-radius: 1rem;
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid whitesmoke;
+    border-radius: 1rem;
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 1rem;
+    }
+  }
+  .detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      .title {
+        font-weight: 500;
+      }
+      p {
+        font-weight: 300;
+      }
+    }
+    .fav {
+      cursor: pointer;
+      color: $primaryColor;
+      &:hover {
+        color: red;
+      }
+    }
+    .basket {
+      cursor: pointer;
+      color: $primaryColor;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}
+.favoritesPage {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  .favoriteds {
+    padding: 15px;
+    width: 33%;
+    .favorited {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 2px solid whitesmoke;
+      border-radius: 1rem;
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 1rem;
+      }
+      .brokeHeart {
+        cursor: pointer;
+        color: #55828b;
+        &:hover {
+          color: brown;
+        }
+      }
+      .basket {
+        cursor: pointer;
+        color: $primaryColor;
+        &:hover {
+          color: blue;
+        }
+      }
+      .favoriteDetail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .title {
+            font-weight: 500;
+          }
+          p {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+
+.baskets {
+  padding: 45px;
+  
+  .basketItem {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    border: 2px solid whitesmoke;
+    border-radius: 1rem;
+    .left {
+      width: 30%;
+      border-radius: 1rem;
+      img {
+        max-width: 60%;
+        height: auto;
+        border-radius: 1rem;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 50%;
+      margin-top: 6rem;
+      .icons {
+        display: flex;
+        
+        .button {
+          cursor: pointer;
+          color: $primaryColor;
+          margin-right: 15px;
+          background-color: $secondaryColor;
+          border-radius: 1rem;
+          &:hover {
+            color: $secondaryColor;
+            background-color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+}
+.totalScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 50px auto;
+
+  .totalPrice {
+    font-weight: 700;
+    color: $primaryColor;
+  }
+}
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .modal {
+    background-color: white;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    .header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $primaryColor;
+      background-color: white;
+      border-bottom: 3px solid $primaryColor;
+      border-radius: 1rem;
+    }
+    .modalDetail {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      border-radius: 1rem;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+      }
+      .modalIcons {
+        color: $primaryColor;
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+
+     
+        .fav {
+          &:hover {
+            color: red;
+          }
+        }
+        .basket {
+          &:hover {
+            color: blue;
+          }
+        }
+      }
+    }
+  }
+}
