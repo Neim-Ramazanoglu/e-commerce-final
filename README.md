@@ -1,3 +1,5 @@
+Canlı linke buradan ulaşabilirsiniz https://e-commerce-shoes.netlify.app/
+
 ![](neim-e-commerce.gif)
 
 
